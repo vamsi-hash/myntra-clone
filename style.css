@@ -1,0 +1,201 @@
+
+/* =====================================
+   SECTION 1: GLOBAL RESET
+   Removes default browser spacing
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #282c3f;
+}
+
+
+/* =====================================
+   SECTION 2: NAVIGATION BAR
+   Styles logo, menus and navbar layout
+===================================== */
+
+.navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 4%;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+/* Website logo styling */
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #ff3f6c;
+}
+
+.logo span {
+    color: #282c3f;
+}
+
+
+/* Navigation menu styling */
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #282c3f;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.nav-links a:hover {
+    color: #ff3f6c;
+}
+
+
+/* =====================================
+   SECTION 3: SEARCH BAR
+   Styles the product search field
+===================================== */
+
+.search-box {
+    background: #f5f5f6;
+    padding: 12px;
+    border-radius: 5px;
+    width: 300px;
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+}
+
+
+/* =====================================
+   SECTION 4: NAVIGATION ICONS
+   Profile, wishlist and shopping bag
+===================================== */
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+.nav-icons div {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-icons small {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* =====================================
+   SECTION 5: HERO BANNER
+   Main promotional banner styling
+===================================== */
+
+.hero {
+    height: 450px;
+    background: linear-gradient(90deg, #282c3f, #a42c55);
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    color: white;
+}
+
+.hero-content p {
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+
+/* Hero banner button */
+.hero-content button {
+    background: #ff3f6c;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.hero-content button:hover {
+    background: #e8325c;
+}
+
+
+/* =====================================
+   SECTION 6: CATEGORY SECTION
+   Styles category cards and layout
+===================================== */
+
+.categories {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+/* Individual category card */
+.category-card {
+    width: 150px;
+    padding: 30px 15px;
+    background: #fff0f3;
+    border-radius: 10px;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Category hover animation */
+.category-card:hover {
+    transform: translateY(-8px);
+}
+
+.category-card p {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 15px;
+}
